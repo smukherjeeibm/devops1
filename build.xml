@@ -44,8 +44,12 @@
   <target name="build-project" depends="init">
     <echo message="${ant.project.name}: ${ant.file}" />
     <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
+<<<<<<< HEAD
     <!-- Changed to com -->
       <src path="com" />
+=======
+      <src path="src" />
+>>>>>>> dddc5e02d0c162246e5edb678c506f1a6494bcae
     	<classpath>
 	      	<pathelement path="${classpathDir}"/>
 	      	<fileset dir="lib">
